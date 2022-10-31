@@ -17,7 +17,7 @@ const ApiData = ({ users }) => {
             <th>Company</th>
           </tr>
         </thead>
-        {users.map((user) => (
+        {users?.map((user) => (
           <tbody key={user.id}>
             <tr>
               <td>{user.id}</td>

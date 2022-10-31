@@ -1,6 +1,6 @@
 import { GET_DATA, GET_SUCCESS, GET_FAIL } from "../constants/constant";
 
-export const userReducer = (state = { users: [] }, action) => {
+export const reducer = (state = { users: [] }, action) => {
   switch (action.type) {
     case GET_DATA:
       return { loading: true, users: [] };
